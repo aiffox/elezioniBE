@@ -1,0 +1,57 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+      "date": {
+        "type": "string"
+      },
+      "name": {
+        "type": "string"
+      },
+      "UUID": {
+        "type": "string"
+      },
+      "image": {
+        "type": "string"
+      },
+      "votes": {
+        "type": "integer"
+      },
+      "candidates": {
+        "type": "array",
+        "items": [
+          {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "surname": {
+                "type": "string"
+              },
+              "votes": {
+                "type": "number"
+              },
+              "UUID": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "name",
+              "surname",
+              "votes",
+              "UUID"
+            ]
+          }
+        ]
+      }
+    },
+    "required": [
+      "date",
+      "name",
+      "image",
+      "votes",
+      "candidates",
+      "UUID"
+    ]
+  }
