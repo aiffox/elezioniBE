@@ -1,0 +1,35 @@
+{
+  "name": "ts-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@types/express": "^4.16.0",
+    "cors": "^2.8.5",
+    "express": "^4.16.3",
+    "is-json": "^2.0.1",
+    "jsonschema": "^1.4.0",
+    "method-override": "^3.0.0",
+    "mongodb": "^3.6.5",
+    "ts-node-dev": "^1.0.0-pre.30",
+    "typescript": "^3.1.1"
+  },
+  "devDependencies": {
+    "@types/mongodb": "^3.6.10"
+  },
+  "scripts": {
+    "tsc": "tsc",
+    "dev": "ts-node-dev --respawn --transpileOnly ./app/app.ts",
+    "prod": "tsc && node ./build/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andregardi/ts-express.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andregardi/ts-express/issues"
+  },
+  "homepage": "https://github.com/andregardi/ts-express#readme"
+}
